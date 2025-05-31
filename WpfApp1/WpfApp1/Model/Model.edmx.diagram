@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="17e0ab026eb34b9782606a867b891367" Name="Diagram1">
+        <EntityTypeShape EntityType="МастерПолModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.Должность" Width="1.5" PointX="3.75" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.ЕдиницаИзмерения" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.Заявка" Width="1.5" PointX="8.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.Материал" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.МатериалНаПродукцию" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.МатериалНаСкладе" Width="1.5" PointX="10.5" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.Место" Width="1.5" PointX="6" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.МестоПродаж" Width="1.5" PointX="8.25" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.Партнер" Width="1.5" PointX="6" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.ПоставкаМатериала" Width="1.5" PointX="8.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.Поставщик" Width="1.5" PointX="6" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.Продукция" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.ПродукцияВЗаявке" Width="1.5" PointX="10.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.ПродукцияСклад" Width="1.5" PointX="5.25" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.Склад" Width="1.5" PointX="3" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.Сотрудник" Width="1.5" PointX="6" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.ТипМатериала" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.ТипОрганизации" Width="1.5" PointX="3.75" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.ТипПродукции" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="МастерПолModel.Цех" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <AssociationConnector Association="МастерПолModel.FK_Сотрудник_Должность" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_Материал_ЕдиницаИзмерения" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_Заявка_Партнер" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_Заявка_Продукция" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_Заявка_Сотрудник" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_ПродукцияВЗаявке_Заявка" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_Материал_ТипМатериала" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_МатериалНаПродукцию_Материал" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_ПоставкаМатериала_Материал" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_МатериалНаПродукцию_Продукция" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_МатериалНаСкладе_ПоставкаМатериала" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_МатериалНаСкладе_Склад" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_МестоПродаж_Место" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_МестоПродаж_Партнер" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_Партнер_ТипОрганизации" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_ПоставкаМатериала_Поставщик" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_Поставщик_ТипОрганизации" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_Продукция_ТипПродукции" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_Продукция_Цех" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_ПродукцияВЗаявке_Продукция" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_ПродукцияСклад_Продукция" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_ПродукцияСклад_Склад" ManuallyRouted="false" />
+        <AssociationConnector Association="МастерПолModel.FK_Сотрудник_Цех" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
